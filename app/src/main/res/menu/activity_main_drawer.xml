@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_driver_behavior"
+            android:icon="@drawable/ic_graphic_eq_black_24dp"
+            android:title="Driver Behavior"/>
+
+        <item
+            android:id="@+id/nav_past_behavior"
+            android:title="Past Behavior"/>
+
+        <item
+            android:id="@+id/nav_trip_analysis"
+            android:icon="@drawable/ic_local_taxi_black_24dp"
+            android:title="Trip Analysis" />
+        <item
+            android:id="@+id/nav_geo_fencing"
+            android:icon="@drawable/ic_language_black_24dp"
+            android:title="Geo-Fencing" />
+
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="My Account" />
+
+
+    </group>
+
+
+
+</menu>

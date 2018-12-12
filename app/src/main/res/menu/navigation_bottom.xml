@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Trip1"
+        android:title="Trip1"
+        android:icon="@drawable/ic_local_taxi_black_24dp"/>
+
+    <item android:id="@+id/Trip2"
+        android:title="Trip2"
+        android:icon="@drawable/ic_local_taxi_black_24dp"/>
+
+    <item android:id="@+id/Trip3"
+        android:title="Trip3"
+        android:icon="@drawable/ic_local_taxi_black_24dp"/>
+
+</menu>
