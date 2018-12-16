@@ -1,6 +1,9 @@
 package com.example.hp.newreadymadenavigationdrawer;
 
 import android.content.Intent;
+
+import com.example.hp.LoginPages.LoginActivity;
+import com.example.hp.currentprojectnearbyplaces.*;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -46,21 +49,20 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
-                Intent fab_intent = new Intent(MainActivity.this, Fab2_Activity.class );
+
+                Intent fab_intent = new Intent(MainActivity.this, NearbyPlacesMap.class );
                 startActivity(fab_intent);
             }
         });
 
-        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab1);
+        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab2);
 
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent fab1_intent = new Intent(MainActivity.this, Fab1_Activity.class);
+                Intent fab1_intent = new Intent(MainActivity.this, NavigatetoCar.class);
                 startActivity(fab1_intent);
 
 
@@ -140,6 +142,10 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent_past_behavior);
         }
         else if (id == R.id.nav_geo_fencing) {
+
+            Toast.makeText(this,"Geo-Fencing Clicked",Toast.LENGTH_SHORT).show();
+            Intent geo_fencing_Activity = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(geo_fencing_Activity);
 
 
         } else if (id == R.id.nav_account) {

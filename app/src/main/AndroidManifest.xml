@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,15 +17,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
+
+
+        <activity android:name="com.example.hp.LoginPages.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -60,14 +71,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".Fab1_Activity"
-                android:parentActivityName=".MainActivity"
-                android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.example.hp.currentprojectnearbyplaces.NearbyPlacesMap"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-       </activity>
-        <activity android:name=".Fab2_Activity"></activity>
+        </activity>
+        <activity
+            android:name="com.example.hp.currentprojectnearbyplaces.NavigatetoCar"
+            android:label="@string/title_activity_navigateto_car" />
+
+
+        <activity android:name="com.example.hp.LoginPages.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
